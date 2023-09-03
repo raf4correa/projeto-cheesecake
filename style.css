@@ -25,10 +25,18 @@ main{
     margin-inline: auto;
 
     padding: 5.6rem 4rem;
+
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
 }
 
 img{
     width: 100%;
+    margin-block: 3.2rem;
 }
 
 button {
@@ -42,7 +50,7 @@ button {
 
     border-radius: .6rem;
 
-    margin-top: 1.8rem;
+    margin-top: 3.2rem;
 
 }
 
@@ -50,7 +58,25 @@ h1, h2{
     font-size: 2.8rem;
 }
 
+h2 {
+    margin-bottom: 3.2rem;
+}
+
 p, li, strong {
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+
+ul, ol {
+    padding-left: 2.4rem;
+}
+
+UL{
+    margin-bottom: 2.4rem;
+}
+
+@media (min-width:770px){
+    body{
+        color: red;
+    }
 }
